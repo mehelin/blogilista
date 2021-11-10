@@ -1,41 +1,48 @@
-const Note = require('../models/note')
-const User = require('../models/user')
+const Blog = require("../models/blog");
+const User = require("../models/user");
 
-const initialNotes = [
+const initialBlogs = [
   {
-    content: 'HTML is easy',
-    date: new Date(),
-    important: false
+    title: "Joku Blogi",
+    author: "Susanna",
+    url: "joku_blog.com",
+    likes: 11,
+    id: "706dd1r1fcd684120a2aarr3",
   },
   {
-    content: 'Browser can execute only Javascript',
-    date: new Date(),
-    important: true
-  }
-]
+    title: "Blog",
+    author: "MH",
+    url: "blogblog.com",
+    likes: 400,
+    id: "706dd1r1fcd684120a2aarr3",
+  },
+];
 
 const nonExistingId = async () => {
-  const note = new Note({ content: 'willremovethissoon', date: new Date() })
-  await note.save()
-  await note.remove()
+  const blog = new Blog({
+    title: "Test Blog",
+    author: "VIP",
+    url: "google.com",
+  });
+  await blog.save();
+  await blog.remove();
 
-  return note._id.toString()
-}
+  return blog.id.toString();
+};
 
-const notesInDb = async () => {
-  const notes = await Note.find({})
-  return notes.map(note => note.toJSON())
-}
+const blogsInDb = async () => {
+  const blogs = await Blog.find({});
+  return blogs.map((blog) => blog.toJSON());
+};
 
 const usersInDb = async () => {
-  const users = await User.find({})
-  return users.map(u => u.toJSON())
-}
+  const users = await User.find({});
+  return users.map((u) => u.toJSON());
+};
 
 module.exports = {
-  initialNotes,
+  initialBlogs,
   nonExistingId,
-  notesInDb,
+  blogsInDb,
   usersInDb,
-}
-
+};
