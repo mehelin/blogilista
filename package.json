@@ -13,10 +13,6 @@
     "logs:prod": "heroku logs --tail",
     "lint": "eslint ."
   },
-  "repository": {
-    "type": "git",
-    "url": "https://git.heroku.com/blogilista4.git"
-  },
   "keywords": [
     "blogi"
   ],
@@ -31,7 +27,8 @@
     "jsonwebtoken": "^8.5.1",
     "mongo-mock": "^4.1.0",
     "mongoose": "^5.13.13",
-    "mongoose-unique-validator": "^2.0.3"
+    "mongoose-unique-validator": "^2.0.3",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
@@ -42,9 +39,6 @@
   },
   "jest": {
     "testEnvironment": "node"
-  },
-  "bugs": {
-    "url": "https://github.com/mehelin/osa4/issues"
-  },
-  "homepage": "https://github.com/mehelin/osa4#readme"
+  }
 }
+
