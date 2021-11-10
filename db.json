@@ -1,0 +1,55 @@
+{
+  "posts": [
+      {
+      "title": "Pumpuli",
+      "username": "Pumppis",
+      "url": "pumpuli.com",
+      "likes": 100000
+      },
+      {
+      "title": "Rumpali",
+      "username": "Rumppis",
+      "url": "rumpali.com",
+      "likes": 20000
+      },
+      {
+      "title": "Salmiakkitassu",
+      "username": "Salmis",
+      "url": "salmiakkitassu.com",
+      "likes": 300
+      },
+      {
+      "title": "Heinähattu",
+      "username": "Heinis",
+      "url": "heinahattu.com",
+      "likes": 400
+      },
+      {
+      "title": " Vilttitossu",
+      "username": "Vilttis",
+      "url": "vilttitossu.com",
+      "likes": 500
+      },
+      {
+      "title": " Mustikkasuu",
+      "username": "Mustis",
+      "url": "mustikkasuu.com",
+      "likes": 565
+      },
+      {
+      "title": "Minttusuklaatassu",
+      "username": "Misuta",
+      "url": "misuta.com",
+      "likes": 687
+      },
+      {
+      "title": "Pepe",
+      "username": "Pepsu",
+      "url": "pepe.com",
+      "likes": 79
+      }
+  ],
+  "profile": {
+    "title": "typicode"
+  }
+}
